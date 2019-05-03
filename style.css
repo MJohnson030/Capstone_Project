@@ -1,4 +1,4 @@
-/* html {} */
+/* html { } */
 
 
 * {
@@ -7,10 +7,15 @@
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    /* width: 100%; */
     position: relative;
     margin: auto;
     border: 6px solid black;
+}
+
+.mySlides,
+.slideshow-container {
+    width: 100%;
 }
 
 /* Hide the images by default */
