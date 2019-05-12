@@ -1,12 +1,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title></title>
+<title>Contact</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="">
 <link rel="stylesheet" href="CSS/reset.css" />
 <link rel="stylesheet" href="CSS/style.css" />
 <link rel="stylesheet" href="CSS/wordAnimationAbout.css" />
+<link rel="stylesheet" href="CSS/form.css" />
 <link href="https://fonts.googleapis.com/css?family=Bungee|Sarabun|Staatliches" rel="stylesheet">
 </head>
 
@@ -34,12 +35,43 @@
     
      
 </aside>
+
+<form method="post">
+    <fieldset>
+        <div class="formRow">
+            <label for="name">Name*</label>
+            <input name="custName" id="name" type="text" placeholder="First and Last name" required />
+        </div>
+
+        <div class="formRow">
+            <label for="phone">Phone number*</label>
+            <input name="phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" required
+                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+        </div>
+
+        <div id="formRow">
+            <label for="mail">E-mail*</label>
+            <input type="email" name="custEmail" id="mail" placeholder="example@gmail.com" required />
+        </div>
+
+        <div>
+            <label for="commBox" id="commBox">Lets us know of any questions you have</label>
+            <textarea name="custExp" id="commBox"></textarea>
+
+    </fieldset>
+
+    <div id="buttons">
+        <input type="submit" id="submittButton" value="Submit My Survey" />
+        <input type="reset" value="Cancel" />
+    </div>
+</form>
 <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
 
 <script src="JS/wordAnimationContact.js"></script>
+<script src="JS/formValidation.js"></script>
 </body>
 
 </html>

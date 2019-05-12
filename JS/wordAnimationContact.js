@@ -1,6 +1,6 @@
 
 function wordAnimation() {
-    var string = "~ CONTANCT ~";
+    var string = "~ Contact us for more questions! ~";
     var str = string.split("");
     var el = document.getElementById('str');
     (function animate() {
