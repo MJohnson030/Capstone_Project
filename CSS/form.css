@@ -11,16 +11,17 @@ form {
 }
 
 div {
-    margin: 0px 50px;
+    /* margin: 0px 50px; */
 }
 
 fieldset {
-    border: 3px solid black;
+    border: 4px solid black;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 legend {
+    margin-left: 15px;
     font-size: 2em;
     letter-spacing: 5px;
 }
@@ -31,6 +32,8 @@ input#mail {
     float: right;
     width: 30%;
     height: 20px;
+    background-color: rgba(238, 234, 25, 0.61);
+    margin-right: 15px;
 }
 
 textarea {
@@ -40,10 +43,15 @@ textarea {
     height: 100px;
     float: right;
     font-size: 14px;
+    margin-right: 15px;
 }
 
 div#buttons {
     text-align: center;
+}
+
+.formRow {
+    margin-left: 15px;
 }
 
 /* end form styles */
