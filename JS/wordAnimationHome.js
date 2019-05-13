@@ -1,5 +1,5 @@
 function wordAnimation() {
-    var string = "Medical Assisting";
+    var string = "MEDICAL ASSISTING";
     var str = string.split("");
     var el = document.getElementById('str');
     (function animate() {
