@@ -1,0 +1,57 @@
+/* form styles */
+
+form {
+    padding-top: 20px;
+    min-height: 81%;
+    margin: auto;
+    min-width: 480px;
+    max-width: 960px;
+    width: 100%;
+    line-height: 50px;
+}
+
+div {
+    /* margin: 0px 50px; */
+}
+
+fieldset {
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+legend {
+    margin-left: 15px;
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+input#name,
+input#phone,
+input#mail {
+    float: right;
+    width: 30%;
+    height: 20px;
+    background-color: rgba(238, 234, 25, 0.61);
+    margin-right: 15px;
+}
+
+textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 100px;
+    float: right;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+div#buttons {
+    text-align: center;
+}
+
+.formRow {
+    margin-left: 15px;
+}
+
+/* end form styles */
