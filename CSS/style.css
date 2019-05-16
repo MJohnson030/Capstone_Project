@@ -37,9 +37,7 @@ body {
     color: rgb(27, 26, 26);
     font-size: 30px;
     text-indent: 2em;
-    padding-top: 80px;
-    padding-left: 80px;
-    padding-right: 70px;
+    padding: 80px 70px 0px 80px;
 }
 
 #aboutContent {
@@ -245,5 +243,119 @@ nav ul li a:active {
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .slideshow-container,  div#str,  #googleMaps, #northLogo   {
+        display: none;
+    }
+
+    nav ul li {
+        text-align: center;
+        list-style: none;
+        padding: 0px 50px 5px 50px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        color: black;
+        font-size: 10px;
+    }
+
+    nav li {
+        display: block;
+        float: left;
+        width: 20%;
+    }
+
+    nav ul li a:hover,
+nav ul li a:active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 18px;
+}
+
+    #indexContent {
+        display: block;
+        width: 100%;
+        color: rgb(27, 26, 26);
+        font-size: 25px;
+        text-indent: 1em;
+        padding: 40px 35px 0px 40px;
+    }
+
+    #video, #ctsoVideo {
+        width: 300px;
+        height: 175px;
+    }
+
+    #aboutContent, #ctsoContent {
+        display: block;
+        float: left;
+        width: 100%;
+        text-indent: 1em;
+        padding: 15px 25px 0px 25px;
+    }
+
+    #chapterGuidelines {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    nav#computer {
+        display: none;
+    }
+
+.dropbtn {
+    background-color: orange;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .dropdown-links {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-links a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-links a:hover {
+      background-color: rgb(221, 221, 221);
+    }
+
+  .dropdown:hover .dropdown-links {
+      display: block;
+    }
+ 
+  .dropdown:hover .dropbtn {
+      background-color: rgb(228, 151, 7);
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .dropdown {
+        display: none;
     }
 }
